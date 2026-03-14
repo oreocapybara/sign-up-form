@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Sign-up Form</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+        <div class="form-container">
+            <div class="hero">
+                <div>
+                    <img src="./assets/odin-lined.png" alt="Odin Logo">
+                    <h1>ODIN</h1>
+                </div>
+
+                <cite>
+                    Photo by <a href="https://unsplash.com/@andreyanez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">André Yáñez</a> on <a href="https://unsplash.com/photos/a-building-with-a-large-wooden-door-and-a-statue-on-top-of-it-gSoS1qStRco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </cite>
+               
+            </div>
+            <div class="main-content">
+                <h1>
+                    This is not a real online service! You know you need something like this
+                    in your life to help you realize your deepest dreams. Sign-up
+                    <em>now</em> to get started.
+                </h1>
+    
+                <h1>You know you want to.</h1>
+    
+                <form action="" method="get">
+                    <h2>Let's do this!</h2>
+    
+                    <div class="container">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="John" required/>
+                    </div>
+    
+                    <div class="container">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" placeholder="Doe" required>
+                    </div>
+    
+                    <div class="container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" pattern="[\w._+%-]+@[\w.-]+\.[a-zA-Z]{2,}"" title="Enter a valid email address (e.g. name@domain.com) " required/>
+                    </div>
+    
+                    <div class="container">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+01-234-567-7890" pattern="\+[\d]{2}-[\d]{3}-[\d]{3}-[\d]{4}" title="Valid phone format is +XX-XXX-XXX-XXXX" minlength="16" maxlength="16" reuired/>
+                    </div>
+    
+                    <div class="container">
+                        <label for="pswd">Password</label>
+                        <input 
+                            type="password" 
+                            name="pswd" 
+                            id="pswd" 
+                            placeholder="Enter Password" 
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])[\w!@#$%&*\^]{8,}$" 
+                            title="Must have a minimum of 8 characters, includ least one lowercase, uppercase, digit, and special character" required/>
+                    </div>
+    
+                     <div class="container">
+                        <label for="confirm-pswd">Confirm Password</label>
+                        <input 
+                            type="password" 
+                            name="confirm-pswd" 
+                            id="confirm-pswd" 
+                            placeholder="Confirm password" 
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])[\w!@#$%&*\^]{8,}$" 
+                            title="Must have a minimum of 8 characters, includ least one lowercase, uppercase, digit, and special character" 
+                            required/>
+                    </div>
+    
+                    <button type="submit">Create Account</button>
+                    <span>Already have an account?<a href="#">Log in</a></span>
+                </form>
+            </div>
+        </div>
+		
+	</body>
+</html>

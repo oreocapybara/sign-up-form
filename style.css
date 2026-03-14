@@ -1,0 +1,50 @@
+:root{
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+
+
+    height: 100vh;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+
+    margin: 64px 0;
+    width: 80%;
+
+    border: 2px solid blue;
+    border-radius: 8px;
+    gap: 16px;
+}
+
+.hero{
+    width: 30%;
+    background: 
+        url(./assets/andre-yanez-gSoS1qStRco-unsplash.jpg) 
+        center / cover 
+        no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div{
+        display: flex;
+        background: rgba(87, 90, 106, 0.574);
+
+        justify-content: center;
+        align-items: center; 
+        padding: 32px;
+        img{
+            width: 128px;
+        }
+    }
+}
