@@ -3,6 +3,12 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Sign-up Form</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
@@ -10,7 +16,7 @@
             <div class="hero">
                 <div>
                     <img src="./assets/odin-lined.png" alt="Odin Logo">
-                    <h1>ODIN</h1>
+                    <h1>Odin</h1>
                 </div>
 
                 <cite>
@@ -18,7 +24,7 @@
                 </cite>
                
             </div>
-            <div class="main-content">
+            <form class="main-content" action="" method="get">
                 <h1>
                     This is not a real online service! You know you need something like this
                     in your life to help you realize your deepest dreams. Sign-up
@@ -27,7 +33,7 @@
     
                 <h1>You know you want to.</h1>
     
-                <form action="" method="get">
+                <div class="form-detail">
                     <h2>Let's do this!</h2>
     
                     <div class="container">
@@ -47,7 +53,7 @@
     
                     <div class="container">
                         <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone" placeholder="+01-234-567-7890" pattern="\+[\d]{2}-[\d]{3}-[\d]{3}-[\d]{4}" title="Valid phone format is +XX-XXX-XXX-XXXX" minlength="16" maxlength="16" reuired/>
+                        <input type="tel" name="phone" id="phone" placeholder="+01-234-567-7890" pattern="\+[\d]{2}-[\d]{3}-[\d]{3}-[\d]{4}" title="Valid phone format is +XX-XXX-XXX-XXXX" minlength="16" maxlength="16" required/>
                     </div>
     
                     <div class="container">
@@ -72,11 +78,15 @@
                             title="Must have a minimum of 8 characters, includ least one lowercase, uppercase, digit, and special character" 
                             required/>
                     </div>
-    
+
+                </div>
+
+                <div class="submit">
                     <button type="submit">Create Account</button>
-                    <span>Already have an account?<a href="#">Log in</a></span>
-                </form>
-            </div>
+                    <span>Already have an account? <a href="#">Log in</a></span>
+                </div>
+               
+            </form>
         </div>
 		
 	</body>

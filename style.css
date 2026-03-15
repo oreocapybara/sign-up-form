@@ -1,50 +1,195 @@
-:root{
-
+:root {
+	--form-background: #f5f3e7;
+	--form-secondary: #3a5d79;
+	--form-secondary-light: #c8dbf485;
+	--form-accent: #835122;
+	--font-header: "Funnel Display";
+	--font-body: "Funnel Sans";
+	--font-primary: #352416;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-body{
-    display: flex;
-
-
-    height: 100vh;
-    justify-content: center;
+body {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	box-sizing: border-box;
 }
 
-.form-container{
-    display: flex;
+.form-container {
+	display: flex;
 
-    margin: 64px 0;
-    width: 80%;
+	margin: 64px 0;
+	width: 80%;
 
-    border: 2px solid blue;
-    border-radius: 8px;
-    gap: 16px;
+	border: 1.5px solid var(--form-secondary);
+	border-radius: 8px;
+	/* gap: 16px; */
+
+	background: var(--form-background);
+	overflow: hidden;
+
+    box-shadow: 0 8px 8px 0 var(--form-secondary-light);
 }
 
-.hero{
-    width: 30%;
-    background: 
-        url(./assets/andre-yanez-gSoS1qStRco-unsplash.jpg) 
-        center / cover 
-        no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.hero {
+	width: 30%;
+	background: url(./assets/andre-yanez-gSoS1qStRco-unsplash.jpg) center / cover
+		no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
 
-    div{
-        display: flex;
-        background: rgba(87, 90, 106, 0.574);
+	color: white;
 
-        justify-content: center;
-        align-items: center; 
-        padding: 32px;
-        img{
-            width: 128px;
-        }
-    }
+	div {
+		display: flex;
+		background: linear-gradient( #3a3a36a4 0 70%, transparent 90%);
+
+		justify-content: center;
+		align-items: center;
+		padding: 16px 64px;
+
+		img {
+			width: 128px;
+		}
+
+		h1 {
+			font-family: var(--font-header);
+			font-size: 64px;
+		}
+	}
+
+	cite {
+		background: linear-gradient(transparent, #42413d85  40%);
+		padding: 4px;
+	}
+
+	cite,
+	cite a {
+		font-family: var(--font-body);
+		font-size: 14px;
+		color: white;
+	}
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: baseline;
+	gap: 16px;
+	background: linear-gradient( to bottom left, var(--form-background) 0 40%,var(--form-secondary-light) 80% 100%);
+
+	h1,
+	.submit {
+		padding: 0 64px;
+	}
+
+	h1 {
+		color: var(--font-primary);
+		font-family: var(--font-body);
+		font-size: 24px;
+		font-weight: 400;
+		max-width: 65ch;
+	}
+
+	.form-detail {
+		display: flex;
+		/* background: var(--form-secondary-light); */
+		color: #352416;
+		flex-flow: row wrap;
+		gap: 16px;
+		padding: 32px 64px;
+
+		h2 {
+			flex: 0 100%;
+			font-weight: 700;
+			font-style: italic;
+			font-family: var(--font-header);
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			flex: 1 0 264px;
+
+			label,
+			input {
+				font-family: var(--font-body);
+				font-size: 16px;
+
+			}
+
+			label {
+				font-variant-caps: all-small-caps;
+				font-weight: 500;
+			}
+
+			input {
+				height: 24px;
+				padding: 4px;
+				border-radius: 8px;
+				border: 1.5px solid var(--form-secondary);
+				color: var(--font-primary);
+				background: var(--form-background);
+
+				&:focus,
+				&:hover {
+					outline: 1.5px solid var(--form-accent);
+				}
+
+				&invalid {
+					outline: 1.5px solid lightcoral;
+				}
+
+				&:valid {
+					outline: 1.5px solid rgb(12, 95, 12);
+				}
+			}
+		}
+	}
+
+	.submit {
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+		gap: 16px;
+
+		button {
+			padding: 8px;
+			font-family: var(--font-header);
+			font-weight: 700;
+			font-size: 16px;
+			color: var(--form-background);
+
+			background: var(--form-accent);
+			border: none;
+			border-radius: 8px;
+
+			&:focus,
+			&:hover {
+				background: var(--form-secondary);
+			}
+		}
+
+		span {
+			font-size: 12px;
+			color: var(--font-primary);
+
+			font-family: var(--font-body);
+			a {
+				color: var(--form-accent);
+
+				&:hover {
+					color: var(--form-secondary);
+				}
+			}
+		}
+	}
 }
