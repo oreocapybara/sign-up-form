@@ -1,5 +1,6 @@
 # sign-up-form
-Project: Sign-up Form
+  ![Sign-up Form](./assets/image.png)
+
 
 ## Created a simple sign-up form to test client-side input validation
 - used pattern attribute and learned simple regex syntax
@@ -8,5 +9,4 @@ Project: Sign-up Form
 - used different font weights for emphasis on elements
 - used the picture's color pallette to provide consistency on colors
 - learned how to properly use linear gradients
-  
   
